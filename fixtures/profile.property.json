@@ -11,7 +11,7 @@
    "links" : {
       "profile" : [
          {
-            "href" : "${HOSTNAME}/profiles/property"
+            "href" : "${HOSTNAME}/profiles/profile"
          }
       ],
       "documentation" : [
