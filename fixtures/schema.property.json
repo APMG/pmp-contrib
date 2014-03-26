@@ -1,83 +1,21 @@
 {
    "version" : "1.0",
    "attributes" : {
-      "guid" : "23ed201e-73b5-4391-ba87-6de0d1456d96",
       "title" : "Property Schema",
+      "guid" : "23ed201e-73b5-4391-ba87-6de0d1456d96",
       "schema" : {
-         "required" : [
-            "attributes"
+         "allOf" : [
+            {
+               "$ref" : "${HOSTNAME}/schemas/base"
+            },
+            {
+               "$ref" : "#propertySchema"
+            }
          ],
-         "id" : "${HOSTNAME}/schemas/property",
          "type" : "object",
+         "id" : "${HOSTNAME}/schemas/property",
          "description" : "PMP Validation Schema for Property Profile",
-         "definitions" : {
-            "attributes" : {
-               "required" : [
-                  "title"
-               ],
-               "id" : "#attributes",
-               "type" : "object",
-               "description" : "Document metadata object",
-               "properties" : {
-                  "published" : {
-                     "format" : "date-time",
-                     "type" : "string",
-                     "description" : "Document display date in ISO 8601"
-                  },
-                  "byline" : {
-                     "type" : "string",
-                     "description" : "Rendered byline as suggested by document distributor"
-                  },
-                  "title" : {
-                     "type" : "string",
-                     "description" : "A human-meaningful title for this document"
-                  },
-                  "description" : {
-                     "type" : "string",
-                     "description" : "Document synopsis"
-                  },
-                  "tags" : {
-                     "description" : "Tags that describe this document",
-                     "$ref" : "#tags"
-                  }
-               }
-            },
-            "tags" : {
-               "id" : "#tags",
-               "type" : "array",
-               "description" : "List of tags",
-               "items" : {
-                  "type" : "string"
-               }
-            },
-            "links" : {
-               "id" : "#links",
-               "type" : "object",
-               "description" : "Set of links",
-               "properties" : {
-                  "distributor" : {
-                     "description" : "Links that represent users that can legally distribute this document"
-                  },
-                  "copyright" : {
-                     "description" : "Links that represent copyright holders of this document"
-                  },
-                  "author" : {
-                     "description" : "Links that represent authors of this document"
-                  }
-               }
-            }
-         },
-         "$schema" : "http://json-schema.org/draft-04/schema#",
-         "properties" : {
-            "attributes" : {
-               "description" : "Document metadata",
-               "$ref" : "#attributes"
-            },
-            "links" : {
-               "description" : "Set of associated links",
-               "$ref" : "#links"
-            }
-         }
+         "$schema" : "http://json-schema.org/draft-04/schema#"
       },
       "valid" : {
          "to" : "3013-03-26T13:21:31.598Z",
