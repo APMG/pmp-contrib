@@ -1,0 +1,40 @@
+{
+   "version" : "1.0",
+   "attributes" : {
+      "guid" : "88506918-b124-43a8-9f00-064e732cbe00",
+      "title" : "Property Profile",
+      "valid" : {
+         "to" : "3013-03-26T13:21:31.598Z",
+         "from" : "2013-03-26T13:21:31.598Z"
+      }
+   },
+   "links" : {
+      "profile" : [
+         {
+            "href" : "${HOSTNAME}/profiles/property"
+         }
+      ],
+      "documentation" : [
+         {
+            "href" : "http://docs.pmp.io/wiki/Property-Profile",
+            "type" : "text/html"
+         }
+      ],
+      "extends" : [
+         {
+            "href" : "${HOSTNAME}/profiles/base"
+         }
+      ],
+      "schema" : [
+         {
+            "href" : "${HOSTNAME}/schemas/property",
+            "scope" : "update"
+         }
+      ],
+      "alternate" : [
+         {
+            "href" : "${HOSTNAME}/profiles/property"
+         }
+      ]
+   }
+}

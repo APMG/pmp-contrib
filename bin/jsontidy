@@ -1,0 +1,15 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+
+# assumes JSON::XS is installed, and the json_xs cli with it
+if ( !@ARGV ) {
+    die "$0 file.json [...fileN.json]\n";
+}
+
+for my $file (@ARGV) {
+    my $tidied = $file . '.tidy';
+    my $cmd    = "json_xs < $file > $tidied && mv $tidied $file";
+    system($cmd) and die "$cmd failed: $!";
+}
+
