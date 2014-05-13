@@ -25,12 +25,6 @@
             "href" : "${HOSTNAME}/profiles/base"
          }
       ],
-      "schema" : [
-         {
-            "href" : "${HOSTNAME}/schemas/property",
-            "scope" : "update"
-         }
-      ],
       "alternate" : [
          {
             "href" : "${HOSTNAME}/profiles/property"
