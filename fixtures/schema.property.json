@@ -1,8 +1,8 @@
 {
    "version" : "1.0",
    "attributes" : {
-      "title" : "Property Schema",
       "guid" : "23ed201e-73b5-4391-ba87-6de0d1456d96",
+      "title" : "Property Schema",
       "schema" : {
          "allOf" : [
             {
@@ -12,9 +12,27 @@
                "$ref" : "#propertySchema"
             }
          ],
+         "id" : "${HOSTNAME}/docs/23ed201e-73b5-4391-ba87-6de0d1456d96",
          "type" : "object",
-         "id" : "${HOSTNAME}/schemas/property",
          "description" : "PMP Validation Schema for Property Profile",
+         "definitions" : {
+            "propertySchema" : {
+               "id" : "#propertySchema",
+               "description" : "Property profile definition",
+               "properties" : {
+                  "attributes" : {
+                     "$ref" : "#attributes",
+                     "description" : "Property metadata"
+                  }
+               }
+            },
+            "attributes" : {
+               "type" : "object",
+               "id" : "#attributes",
+               "description" : "Property metadata object",
+               "properties" : {}
+            }
+         },
          "$schema" : "http://json-schema.org/draft-04/schema#"
       },
       "valid" : {

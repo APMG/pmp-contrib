@@ -29,6 +29,12 @@
          {
             "href" : "${HOSTNAME}/profiles/property"
          }
+      ],
+      "schema" : [
+         {
+            "href" : "${HOSTNAME}/docs/23ed201e-73b5-4391-ba87-6de0d1456d96",
+            "scope" : "update"
+         }
       ]
    }
 }
