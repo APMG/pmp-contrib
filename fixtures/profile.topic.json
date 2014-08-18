@@ -1,0 +1,40 @@
+{
+   "version" : "1.0",
+   "attributes" : {
+      "guid" : "3ffa207f-cfbe-4bcd-987c-0bd8e29fdcb6",
+      "title" : "Topic Profile",
+      "valid" : {
+         "to" : "3013-08-18T13:21:31.598Z",
+         "from" : "2013-08-18T13:21:31.598Z"
+      }
+   },
+   "links" : {
+      "profile" : [
+         {
+            "href" : "${HOSTNAME}/profiles/profile"
+         }
+      ],
+      "documentation" : [
+         {
+            "href" : "http://docs.pmp.io/wiki/Topic-Profile",
+            "type" : "text/html"
+         }
+      ],
+      "extends" : [
+         {
+            "href" : "${HOSTNAME}/profiles/base"
+         }
+      ],
+      "alternate" : [
+         {
+            "href" : "${HOSTNAME}/profiles/topic"
+         }
+      ],
+      "schema" : [
+         {
+            "href" : "${HOSTNAME}/docs/fbec0889-1629-4a3b-bb27-e28bc06d63ca",
+            "scope" : "update"
+         }
+      ]
+   }
+}
