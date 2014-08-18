@@ -1,0 +1,55 @@
+{
+   "version" : "1.0",
+   "attributes" : {
+      "guid" : "ab5a19a1-a4eb-412e-96f5-74b3b097a020",
+      "title" : "Episode Schema",
+      "schema" : {
+         "allOf" : [
+            {
+               "$ref" : "${HOSTNAME}/schemas/base"
+            },
+            {
+               "$ref" : "#episodeSchema"
+            }
+         ],
+         "id" : "${HOSTNAME}/docs/ab5a19a1-a4eb-412e-96f5-74b3b097a020",
+         "type" : "object",
+         "description" : "PMP Validation Schema for Episode Profile",
+         "definitions" : {
+            "episodeSchema" : {
+               "id" : "#episodeSchema",
+               "description" : "Episode profile definition",
+               "properties" : {
+                  "attributes" : {
+                     "$ref" : "#attributes",
+                     "description" : "Episode metadata"
+                  }
+               }
+            },
+            "attributes" : {
+               "type" : "object",
+               "id" : "#attributes",
+               "description" : "Episode metadata object",
+               "properties" : {}
+            }
+         },
+         "$schema" : "http://json-schema.org/draft-04/schema#"
+      },
+      "valid" : {
+         "to" : "3013-08-18T13:21:31.598Z",
+         "from" : "2013-08-18T13:21:31.598Z"
+      }
+   },
+   "links" : {
+      "profile" : [
+         {
+            "href" : "${HOSTNAME}/profiles/schema"
+         }
+      ],
+      "alternate" : [
+         {
+            "href" : "${HOSTNAME}/schemas/episode"
+         }
+      ]
+   }
+}

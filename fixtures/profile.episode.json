@@ -1,0 +1,40 @@
+{
+   "version" : "1.0",
+   "attributes" : {
+      "guid" : "42448532-7a6f-47fb-a547-f124d5d9053e",
+      "title" : "Episode Profile",
+      "valid" : {
+         "to" : "3013-08-18T13:21:31.598Z",
+         "from" : "2013-08-18T13:21:31.598Z"
+      }
+   },
+   "links" : {
+      "profile" : [
+         {
+            "href" : "${HOSTNAME}/profiles/profile"
+         }
+      ],
+      "documentation" : [
+         {
+            "href" : "http://docs.pmp.io/wiki/Episode-Profile",
+            "type" : "text/html"
+         }
+      ],
+      "extends" : [
+         {
+            "href" : "${HOSTNAME}/profiles/story"
+         }
+      ],
+      "alternate" : [
+         {
+            "href" : "${HOSTNAME}/profiles/episode"
+         }
+      ],
+      "schema" : [
+         {
+            "href" : "${HOSTNAME}/docs/ab5a19a1-a4eb-412e-96f5-74b3b097a020",
+            "scope" : "update"
+         }
+      ]
+   }
+}
