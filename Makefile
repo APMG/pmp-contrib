@@ -20,6 +20,18 @@ ifdef PMPCLI
 	pmpc put --file fixtures/profile.episode.json
 	pmpc put --file fixtures/schema.topic.json
 	pmpc put --file fixtures/profile.topic.json
+	pmpc put --file fixtures/topic.Arts.json
+	pmpc put --file fixtures/topic.Culture.json
+	pmpc put --file fixtures/topic.Education.json
+	pmpc put --file fixtures/topic.Food.json
+	pmpc put --file fixtures/topic.Health.json
+	pmpc put --file fixtures/topic.Money.json
+	pmpc put --file fixtures/topic.Music.json
+	pmpc put --file fixtures/topic.News.json
+	pmpc put --file fixtures/topic.Politics.json
+	pmpc put --file fixtures/topic.Science.json
+	pmpc put --file fixtures/topic.Sports.json
+	pmpc put --file fixtures/topic.Technology.json
 else
 	@echo 'install Net::PMP and verify pmpc command is in your PATH'
 endif

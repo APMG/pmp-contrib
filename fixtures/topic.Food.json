@@ -1,0 +1,35 @@
+{
+   "version" : "1.0",
+   "attributes" : {
+      "guid" : "635bb7a1-9e49-4a5d-bab3-048ff945b5fb",
+      "title" : "Food",
+      "valid" : {
+         "to" : "3013-08-18T13:21:31.598Z",
+         "from" : "2013-08-18T13:21:31.598Z"
+      }
+   },
+   "links" : {
+      "profile" : [
+         {
+            "href" : "${HOSTNAME}/docs/3ffa207f-cfbe-4bcd-987c-0bd8e29fdcb6",
+            "title" : "Topic"
+         }
+      ],
+      "documentation" : [
+         {
+            "href" : "http://docs.pmp.io/wiki/Topics",
+            "type" : "text/html"
+         }
+      ],
+      "alternate" : [
+         {
+            "href" : "${HOSTNAME}/topics/food"
+         }
+      ],
+      "collection" : [
+         { 
+            "href" : "${HOSTNAME}/docs/426269f0-893a-4020-95a4-840324d3b1ef"
+         }
+      ]
+   }
+}
