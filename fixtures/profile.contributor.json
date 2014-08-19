@@ -22,7 +22,7 @@
       ],
       "extends" : [
          {
-            "href" : "${HOSTNAME}/profiles/base"
+            "href" : "${HOSTNAME}/profiles/pmpcore"
          }
       ],
       "schema" : [

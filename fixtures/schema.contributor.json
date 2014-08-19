@@ -6,7 +6,7 @@
       "schema" : {
          "allOf" : [
             {
-               "$ref" : "${HOSTNAME}/schemas/base"
+               "$ref" : "${HOSTNAME}/schemas/pmpcore"
             },
             {
                "$ref" : "#contributorSchema"
