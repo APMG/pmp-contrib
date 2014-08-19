@@ -1,0 +1,40 @@
+{
+   "version" : "1.0",
+   "attributes" : {
+      "guid" : "8bf6f5ae-84b1-4e52-a744-8e1ac63f283e",
+      "title" : "Contributor Profile",
+      "valid" : {
+         "to" : "3014-03-11T13:21:31.598Z",
+         "from" : "2014-03-11T13:21:31.598Z"
+      }
+   },
+   "links" : {
+      "profile" : [
+         {
+            "href" : "${HOSTNAME}/profiles/profile"
+         }
+      ],
+      "documentation" : [
+         {
+            "href" : "http://docs.pmp.io/wiki/Contributor-Profile",
+            "type" : "text/html"
+         }
+      ],
+      "extends" : [
+         {
+            "href" : "${HOSTNAME}/profiles/base"
+         }
+      ],
+      "schema" : [
+         {
+            "href" : "${HOSTNAME}/schemas/48e82b36-53b8-472d-8c71-e5d1e135d0c2",
+            "scope" : "update"
+         }
+      ],
+      "alternate" : [
+         {
+            "href" : "${HOSTNAME}/profiles/contributor"
+         }
+      ]
+   }
+}
